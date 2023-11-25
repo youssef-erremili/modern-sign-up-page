@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(img/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    line-height: 1.5;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: inherit;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main .left,
+.main .right {
+    width: 50%;
+}
+
+.main .left .head h1,
+.main .left .head p {
+    text-wrap: balance;
+    color: hsl(0, 0%, 100%);
+}
+
+.main .left .head h1 {
+    font-size: 3.4em;
+    line-height: normal;
+}
+
+.main .left .head p {
+    font-weight: 400;
+    padding-right: 20px;
+    font-size: 1em;
+    margin-top: 14px;
+    line-height: 1.8;
+}
+
+/* End right */
+
+.main .sectionYU i,
+.main .forth #passIcon {
+    position: absolute;
+    z-index: 10;
+    right: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.main .forth #passIcon {
+    width: 25px;
+    right: 6%;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.main .sectionYU .fa-check {
+    color: #0ae006;
+}
+
+.main .sectionYU .fa-circle-exclamation {
+    color: #ff0000;
+}
+
+.main .sectionYU {
+    position: relative;
+}
+
+.main .sectionYU i.fa-check,
+.main .sectionYU i.fa-circle-exclamation {
+    visibility: hidden;
+    z-index: 10;
+}
+
+.main .right .proposal_section {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 7px;
+    display: block;
+    width: auto;
+    padding: 1em 10px;
+    margin: 10px 0;
+}
+
+.main .right .proposal_section h4 {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main .right .form {
+    background-color: #fff;
+    padding: 1.5em 1.7em;
+    text-wrap: nowrap;
+    text-align: center;
+    width: auto;
+    border-radius: 7px;
+}
+
+.main .right .form input {
+    display: block;
+    outline: none;
+    border: 2px solid hsl(246, 25%, 77%);
+    width: 90%;
+    padding: 17px 17px;
+    border-radius: 5px;
+    margin: 1.7em auto;
+    transition: all 140ms ease-in-out;
+    font-size: 16px;
+}
+
+.main .right .form input:focus {
+    border-color: hsl(249, 10%, 26%);
+}
+
+.main .right .form input[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1.7px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: unset;
+}
+
+.main .forth {
+    position: relative;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: hsl(0, 1%, 41%);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.main .right .form p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(0, 0%, 27%);
+    margin: 14px 0 0 0;
+    font-family: "Poppins", sans-serif;
+    text-wrap: wrap;
+}
+
+#terms {
+    color: hsl(154, 59%, 51%);
+}
+
+
+
+/* 
+    Now we gonna make this login page responsive
+*/
+@media only screen and (max-width: 960px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .main {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .main {
+        flex-direction: column;
+        padding: 5em 0;
+        text-align: center;
+    }
+
+    .main .left .head p {
+        padding-right: unset;
+    }
+
+
+    .main .left,
+    .main .right {
+        width: 80%;
+    }
+
+    .main .right {
+        margin-top: 4em;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .main .right {
+        width: 98%;
+    }
+    .main .right .form input[type="submit"]{
+        text-wrap: balance;
+    }
+}

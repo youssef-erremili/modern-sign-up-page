@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Login</title>
+</head>
+<body>
+    <main class="main">
+        <div class="left">
+            <div class="head">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                    understanding how developers think is invaluable.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="proposal_section">
+                <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
+            </div>
+            <div class="form">
+                <form action="" method="get" name="form" onsubmit="return validateForm();">
+                    <div class="first sectionYU">
+                        <input type="text" name="firstName" id="firstName" placeholder="FirstName">
+                        <i class="fa-solid fa-check" id="fa-check-F"></i>
+                        <i class="fa-solid  fa-circle-exclamation" id="fa-circle-F"></i>
+                        <small class="msg_Valid"></small>
+                    </div>
+                    <div class="second sectionYU">
+                        <input type="text" name="lastName" id="lastName" placeholder="LastName">
+                        <i class="fa-solid fa-check" id="fa-check-S"></i>
+                        <i class="fa-solid fa-circle-exclamation" id="fa-circle-S"></i>
+                        <small class="msg_Valid"></small>
+                    </div>
+                    <div class="therd sectionYU">
+                        <input type="email" name="emailUser" id="email" placeholder="Email Address">
+                        <i class="fa-solid fa-check" id="fa-check-T"></i>
+                        <i class="fa-solid fa-circle-exclamation" id="fa-circle-T"></i>
+                        <small class="msg_Valid"></small>
+                    </div>
+                    <div class="forth sectionYU">
+                        <input type="password" name="passWord" id="passField" placeholder="Password">
+                        <img src="img/show.svg" alt="show-password"  onclick="showPass()" id="passIcon">
+                        <small class="msg_Valid"></small>
+                    </div>
+                    <input type="submit" id="submit"  value="Claim your free trial">
+                </form>
+                <p> By clicking the button, you are agreeing to our <strong><a id="terms" href="">Terms and
+                            Services</a></strong></p>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/25ae13bf53.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 # **Modern Sign-Up Page**
 **Responsive Sign-Up Page with Validation**
 
-**try it:** https://youssef-erremili.github.io/modren-sign-up-page/ 
+**try it:** https://youssef-erremili.github.io/modern-sign-up-page/
 
 
 **Description:**
